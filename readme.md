@@ -122,10 +122,3 @@ curl -X POST http://127.0.0.1:8000/api/chat/ \
 
 ---
 
-## 📜 License
-
-MIT License.
-
----
-
-👉 Do you want me to also generate a `.env.example` file for you (with placeholders for all API keys) so your teammates don’t get lost?
