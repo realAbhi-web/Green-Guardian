@@ -25,7 +25,6 @@ cffi==1.17.1
 channels==4.3.1
 charset-normalizer==3.4.1
 click==8.1.7
-cockpit @ file:///builddir/build/BUILD/cockpit-345-build/cockpit-345/tmp/wheel/cockpit-345-py3-none-any.whl#sha256=db6a0d77ed4bba2dc41c8c18d7e4c351c527ff875ebb3bbe4348e70a5c755bbd
 constantly==23.10.4
 crypt_r==3.13.1
 cryptography==44.0.0
@@ -138,7 +137,6 @@ pytz==2025.2
 pyudev==0.24.3
 pyxdg==0.27
 PyYAML==6.0.2
-pyynl @ file:///builddir/build/BUILD/kernel-6.16.3-build/kernel-6.16.3/linux-6.16.3-200.fc42.x86_64/tools/net/ynl
 RapidFuzz==3.11.0
 referencing==0.36.2
 regex==2024.11.6
@@ -154,9 +152,7 @@ s3transfer==0.13.1
 scikit-learn==1.7.2
 scipy==1.16.1
 SecretStorage==3.3.3
-selinux @ file:///builddir/build/BUILD/libselinux-3.8-build/libselinux-3.8/src
 sentry-sdk==2.21.0
-sepolicy @ file:///builddir/build/BUILD/policycoreutils-3.8-build/selinux-3.8/python/sepolicy
 service-identity==24.2.0
 setools==4.5.1
 setuptools==74.1.3
