@@ -10,27 +10,26 @@ import json
 import joblib
 import pandas as pd
 import os
-
-# Create your views here.
-
+from dotenv import load_dotenv
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
 import requests
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '../.env'))
 
-OPEN_WEATHER_API_KEY = 'REMOVED_KEY'
+OPEN_WEATHER_API_KEY = os.getenv("OPEN_WEATHER_API_KEY")
 
-GROQ_API_KEY = 'REMOVED_KEY'
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL_NAME = "llama-3.1-8b-instant"
 
-CEDA_API_KEY = 'REMOVED_KEY'  #valid till Fri Sep 12 2025 03:54:46
+CEDA_API_KEY = os.getenv("CEDA_API_KEY")  #valid till Fri Sep 12 2025 03:54:46
 
 CEDA_URL = 'https://api.ceda.ashoka.edu.in/api/v1/agmarknet/'
 
 # Valid till 15 days from now probably end on 20 Sep 2025
-MEERSENS_API_KEY = 'REMOVED_KEY' #site https://eaas.meersens.com/api/me
+MEERSENS_API_KEY = os.getenv("MEERSENS_API_KEY") #site https://eaas.meersens.com/api/me
 
 MEERSENS_URL = 'https://api.meersens.com/environment/public'
 
