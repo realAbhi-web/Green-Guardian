@@ -62,6 +62,15 @@ body{
     rgba(60, 51, 80, 0) 100%
   );
 }
+.green-gradient {
+  background: #38ef7d;
+  background: linear-gradient(-90deg, #38ef7d 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #38ef7d 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
 
 .green-pink-gradient {
   background: "#00cea8";
