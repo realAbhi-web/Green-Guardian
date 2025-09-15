@@ -1,0 +1,280 @@
+import {
+  mobile,
+  backend,
+  creator,
+  web,
+  javascript,
+  typescript,
+  html,
+  css,
+  reactjs,
+  redux,
+  tailwind,
+  nodejs,
+  mongodb,
+  git,
+  figma,
+  docker,
+  meta,
+  starbucks,
+  tesla,
+  shopify,
+  carrent,
+  jobit,
+  tripguide,
+  threejs,
+} from "../assets";
+
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
+const services = [
+  {
+    title: "About Abhinandan",
+    icon: web,
+    description: "Abhinandan works on frontend design and user experience, ensuring clean and modern interfaces.",
+  },
+  {
+    title: "About Nishant",
+    icon: mobile,
+    description: "Nishant specializes in mobile and responsive development, making apps accessible to everyone.",
+    description: "Nishant specializes in mobile and responsive development, making apps accessible to everyone.",
+  },
+  {
+    title: "About Anmol",
+    icon: backend,
+    description: "Anmol handles backend and APIs, building scalable and efficient solutions for agriculture tech.",
+  },
+  {
+    title: "About Divyansh",
+    icon: creator,
+    description: "Divyansh focuses on AI and creative features, driving innovation in sustainable farming.",
+  },
+  {
+    title: "About Neelaksi",
+    icon: creator,
+    description: "Neelaksi focuses on AI and creative features, driving innovation in sustainable farming.",
+  },
+  {
+    title: "About Shivani",
+    icon: creator,
+    description: "Shivani focuses on AI and creative features, driving innovation in sustainable farming.",
+    description: "Shivani focuses on AI and creative features, driving innovation in sustainable farming.",
+  },
+];
+
+const technologies = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "docker",
+    icon: docker,
+  },
+];
+
+const experiences = [
+  {
+    title: "Frontend Kickoff",
+    company_name: "Contributed By Neelakshi and Nishant",
+    // icon: starbucks,
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Phase 1",
+    points: [
+      "Started with designing the user interface for the app.",
+      "Built the frontend using React.js for a clean and responsive design.",
+      "Rendered some initial 3D objects to visualize ideas.",
+    ],
+  },
+  {
+    title: "Backend Development",
+    company_name: "Contributed By Abhinandan",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Phase 2",
+    points: [
+      "Set up the backend with Django for handling data and API endpoints.",
+      "Integrated user authentication and storage systems.",
+      "Ensured smooth communication between frontend and backend.",
+    ],
+  },
+  {
+    title: "Open Source APIs",
+    company_name: "Contributed By Abhinandan and Anmol",
+    // icon: shopify,
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Phase 3",
+    points: [
+      "Explored multiple open-source APIs for agriculture and weather data.",
+      "Selected and integrated the most reliable APIs for real-time insights.",
+      "Customized the APIs to fit our project needs.",
+    ],
+  },
+  {
+    title: "ML Dataset Creation",
+    company_name: "Contributed By Divyansh",
+    // icon: meta,
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Phase 4",
+    points: [
+      "Faced the toughest challenge: creating our own dataset for the ML model.",
+      "Collected and cleaned agricultural data for training.",
+      "Trained a custom model to solve domain-specific problems.",
+    ],
+  },
+];
+
+const testimonials = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "Sara Lee",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+];
+
+const projects = [
+  {
+    name: "Car Rent",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Job IT",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects };

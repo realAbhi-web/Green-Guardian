@@ -1,0 +1,11 @@
+{
+  "name": "my-project",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"python backend/manage.py runserver\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
