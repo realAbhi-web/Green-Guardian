@@ -10,3 +10,5 @@ venv/
 # Node / frontend
 node_modules/
 dist/
+
+replace-secrets.txt
