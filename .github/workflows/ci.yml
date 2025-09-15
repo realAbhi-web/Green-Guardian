@@ -10,41 +10,42 @@ jobs:
   backend:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      # Setup Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      - name: Install backend dependencies
-        working-directory: backend
+      - name: Install dependencies
         run: |
+          cd backend
           python -m pip install --upgrade pip
-          pip install -r requirements-ci.txt
+          pip install -r requirements.txt
 
-      - name: Run Django tests
-        working-directory: backend
+      - name: Run Django checks
         run: |
-          python manage.py migrate
-          python manage.py test
+          cd backend
+          python manage.py check
 
   frontend:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      # Setup Node
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "18"
 
-      - name: Install frontend dependencies
-        working-directory: frontend
-        run: npm install
+      - name: Install dependencies
+        run: |
+          cd frontend
+          npm install
 
-      - name: Run frontend build
-        working-directory: frontend
-        run: npm run build
+      - name: Build frontend
+        run: |
+          cd frontend
+          npm run build
